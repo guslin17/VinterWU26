@@ -1,1 +1,73 @@
-/* Här skrivs all din CSS */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main {
+    display: grid;
+    grid-template-areas: 
+    'hd nv nv nv nv'
+    'a1 s1 s1 s1 a2'
+    'a1 .  .  .  a2'
+    'a1 .  s2 .  a2'
+    'ft ft ft ft ft';
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    background-size: cover;
+   
+    background-image: url(/img/4Pi6bG7gp-5LU1RKtys5XNNPdkjldi_jYWYOEnc8ydj8DWvo-FUkbVC3Efe_hEslasQJ0OLLhfjp1dfZLVgVwlveJymK-d4L4TCQoyW34wyb4T6yeal1mWDnVIcKwOH3HZhvfSh9G7NAEUu5gcnKcqf7FK12afYGiLoCRpoHpm8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+   
+header {
+    grid-area: hd;
+    display: flex;
+}
+
+nav {
+    grid-area: nv;
+    display: flex;
+    background-color: rgba(250, 239, 239, 0.5);
+    border-radius: 100px;
+}
+
+nav ul {
+    display flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+#aside1 {
+    grid-area: a1;
+    display: flex;
+}
+
+#aside2 {
+    grid-area: a2;
+    display: flex;
+}
+
+#section1 {
+    grid-area: s1;
+    display: flex;
+}
+
+#section2 {
+    grid-area: s2;
+    display: flex;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+}
+
+footer {
+    grid-area: ft;
+    display: flex;
+}

@@ -1,10 +1,85 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.cards-page {
+    background-image: url(/img/dirk-lach-fSgF4pEQEY8-unsplash.jpg);
+    background-size: cover;
+}
+
+.top-bar {
+    display: grid;
+    grid-template-areas: 'hd nv nv nv nv';
+    grid-template-columns: repeat(5, 20%);
+    height: 20vh;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgb(227, 227, 227);
+    width: 250px;
+    height: 470px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 5px solid black;
+}
+
+.card-image {
+    height: 300px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.led-1 {
+    background-image: url(/img/tofan-teodor-0dnZDy6QPl4-unsplash.jpg);
+    background-color: green;
+}
+
+.led-2 {
+    background-image: url(/img/tofan-teodor-kyVx1YhXrLA-unsplash.jpg);
+}
+
+.led-3 {
+    background-image: url(/img/tofan-teodor-oNY8a3LFqtc-unsplash.jpg);
+}
+
+.led-4 {
+    background-image: url(/img/tofan-teodor-yR04tXTVRZU-unsplash.jpg);
+}
+
+.card-1 {
+    background-color: green
+}
+
+.card-2 {
+    background-color: blue
+}
+
+.card-3 {
+    background-color: yellow
+}
+
+.card-4 {
+    background-color: red;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-.main {
+.landing-grid {
     display: grid;
     grid-template-areas: 
     'hd nv nv nv nv'
@@ -26,19 +101,29 @@ html, body {
 header {
     grid-area: hd;
     display: flex;
+    font-family: cursive;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(125, 5, 95, 0.5);
+    border-radius: 100px;
+    font-weight: 1000;
+    text-transform: uppercase;
 }
 
 nav {
     grid-area: nv;
     display: flex;
+    align-items: center;
     background-color: rgba(250, 239, 239, 0.5);
     border-radius: 100px;
 }
 
 nav ul {
-    display flex;
+    display: flex;
     list-style: none;
     justify-content: space-around;
+    width: 100%;
 }
 
 #aside1 {
@@ -70,4 +155,9 @@ nav ul {
 footer {
     grid-area: ft;
     display: flex;
+}
+
+.gear-page {
+    background-image: url(/img/jonathan-burger-CmROD0mD_yA-unsplash.jpg);
+    background-size: cover;
 }
